@@ -27,7 +27,7 @@ function getInsultsForEntity(entity){
 }
 
 function createDownloadLink(obj, parentID){
-	var data = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(obj));
+	var data = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(obj, null, 2));
 
 	var a = document.createElement('a');
 	a.href = 'data:' + data;
