@@ -1,3 +1,10 @@
+/*
+Run this code on http://www.nytimes.com/interactive/2016/01/28/upshot/donald-trump-twitter-insults.html
+to download Trump's insults as a JSON file. This will add a link with the text "Download JSON" 
+near the top of the page. The JSON file has the the person/entity's name as key and an array of objects 
+with the text of the insult and the Twitter link to it as the value.
+*/
+
 function downloadAllInsults(document){
 	var all_insults={};
 	var entities= document.getElementsByClassName("g-entity-item");
